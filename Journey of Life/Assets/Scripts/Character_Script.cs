@@ -28,7 +28,7 @@ public class Character_Script : MonoBehaviour {
             }
             if ( Input.GetKey ("right"))
             {
-                character.AddForce(new Vector2(100, 0));
+                character.AddForce(new Vector2(20, 0));
             }
         }
 	}
