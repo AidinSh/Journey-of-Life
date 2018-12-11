@@ -23,7 +23,8 @@ public class Character_Script : MonoBehaviour {
     {
 		if ( isDead == false)
         {
-            if ( Input.GetKeyDown ("space") && jumpReady)
+            if (Input.touchCount > 0 && jumpReady)
+               // if ( Input.GetKeyDown ("space") && jumpReady)
             {
                 //character.velocity = Vector2.zero;
                 character.AddForce(new Vector2(0, upForce));
