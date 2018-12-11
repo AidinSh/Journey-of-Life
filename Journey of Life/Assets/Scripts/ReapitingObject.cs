@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ReapitingObject : MonoBehaviour {
 
-    private BoxCollider2D groundColiider;
+    private PolygonCollider2D groundColiider;
     private float groundHorizontalLenght;
 
 	void Start ()
     {
-        groundColiider = GetComponent<BoxCollider2D>();
-        groundHorizontalLenght = groundColiider.size.x;
+        groundColiider = GetComponent<PolygonCollider2D>();
+        groundHorizontalLenght = 19.2f;
 	}
 	
 	
